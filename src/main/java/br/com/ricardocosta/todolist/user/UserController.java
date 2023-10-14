@@ -47,7 +47,6 @@ public class UserController {
         if (user != null) {
 
            
-
             //Mensagem de erro
             // Status Code
 
