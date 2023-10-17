@@ -42,7 +42,6 @@ public class TaskController {
        taskModel.setIdUser((UUID) idUser);
        
        var currentDate = LocalDateTime.now();
-       System.out.println("Data atual" + currentDate);
        
        if(currentDate.isAfter(taskModel.getStartAt()) || currentDate.isAfter(taskModel.getEndAt())) {
            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
